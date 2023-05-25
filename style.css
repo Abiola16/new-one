@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+section {
+    width: 100%;
+    display: flex;
+}
+
+.gradient {
+    background-image: url(img/bg-main-desktop.png);
+    background-size: cover;
+    background-position: center;
+    width: 30%;
+}
+
+.img {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+img {
+    width: 330px;
+}
+
+.img1 {
+    position: relative;
+    right: 30px;
+    margin-bottom: 20px;
+}
+
+.img2 {
+    position: relative;
+    left: 40px;
+}
+
+.white {
+    width: 70%;
+}
+
+form {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.white .wrapper .input-1,
+.white .wrapper .input-2,
+.white .wrapper .input-3,
+.white .wrapper .input-4,
+.white .wrapper .input-5 {
+    width: 300px;
+    padding: 7px 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid #e1e1e1;
+}
+
+.white .wrapper .input-3,
+.white .wrapper .input-4 {
+    width: 65px;
+}
+
+.white .wrapper .input-5 {
+    width: 140px;
+    position: relative;
+    left: 25px;
+}
+
+span {
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+#cvc {
+    padding-left: 48px;
+}
+
+button {
+    width: 300px;
+    height: 40px;
+    background-color: rgb(41, 8, 71);
+    padding: 9px;
+    border-radius: .3rem;
+    border: rgba(44, 44, 44, 0.308) 1px solid;
+    outline: none;
+    color: white;
+    cursor: pointer;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+@media only screen and (max-width:1230px) {
+    section {
+        width: 100%;
+        display: flex;
+        flex-direction: column; 
+    }
+
+    .gradient {
+        background-image: url(img/bg-main-desktop.png);
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        padding: 30px 70px;
+    }
+
+    .img {
+        position: inherit;
+        transform: translate(0%);
+    }
+
+    img {
+        width: 200px;
+    }
+
+    .img1 {
+        z-index: 1000;
+        position: relative; top: 79px;
+    }
+
+    .img2 {
+        position: relative; bottom: 120px;
+    }
+
+    .white {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    form {
+        height: auto;
+        width: 100%;
+    }
+}
